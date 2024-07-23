@@ -4,9 +4,11 @@ import { UserComponent } from './user/user.component';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
   standalone: true,
-  imports: [HeaderComponent, UserComponent ],
-  styleUrl: './app.component.css',
+  imports: [HeaderComponent, UserComponent],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {}
+export class AppComponent {
+  // ...
+}
