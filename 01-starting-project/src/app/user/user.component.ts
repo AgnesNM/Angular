@@ -9,9 +9,11 @@ import { Component, Input, Output, EventEmitter} from '@angular/core';
 })
 
 export class UserComponent  {
-  @Input({ required: true }) id!: string;
-  @Input({ required: true }) avatar!: string;
-  @Input({ required: true }) name!: string;
+  @Input({ required: true }) user!: {
+    id: string;
+    avatar: string;
+    name: string;
+  };
 
   //---Output properties
 
@@ -19,7 +21,7 @@ export class UserComponent  {
   // select = output<string>();
 
   get imagePath(){
-    return 'assets/users/' + this.avatar;
+    return 'assets/users/' + this.user.avatar;
   }
 
   // //---Accepting inputs via signals---
@@ -31,6 +33,6 @@ export class UserComponent  {
   // });
 
   onSelectUser (){
-    this.select.emit(this.id);
+    this.select.emit(this.user.id);
   }
 }
