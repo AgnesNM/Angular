@@ -1,20 +1,6 @@
 import { Component, Input, Output, EventEmitter} from '@angular/core';
 
-//----custom types
-
-// type User = {
-//   id: string;
-//   avatar: string;
-//   name: string;
-// }
-
-//---Interfaces
-
-// interface User {
-//   id: string;
-//   avatar: string;
-//   name: string;
-// }
+import {type User } from './user.model'
 
 @Component({
   selector: 'app-user',
@@ -25,11 +11,7 @@ import { Component, Input, Output, EventEmitter} from '@angular/core';
 })
 
 export class UserComponent  {
-  @Input({ required: true }) user!:{
-    id: string;
-    avatar: string;
-    name: string;
-  };
+  @Input({ required: true }) user!: User;
   
   //---Output properties
 
