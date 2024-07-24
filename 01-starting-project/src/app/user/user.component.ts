@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, computed, input } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -15,6 +15,14 @@ export class UserComponent  {
   get imagePath(){
     return 'assets/users/' + this.avatar;
   }
+
+  // //---Accepting inputs via signals---
+  // avatar = input.required<string>(); // generics
+  // name = input.required<string>();
+
+  // imagePath = computed(() => {
+  //   return 'assets/users/' + this.avatar;
+  // });
 
   onSelectUser (){}
 }
