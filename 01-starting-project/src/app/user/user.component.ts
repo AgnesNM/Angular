@@ -10,11 +10,11 @@ import { Component, Input, Output, EventEmitter} from '@angular/core';
 
 //---Interfaces
 
-interface User {
-  id: string;
-  avatar: string;
-  name: string;
-}
+// interface User {
+//   id: string;
+//   avatar: string;
+//   name: string;
+// }
 
 @Component({
   selector: 'app-user',
@@ -25,8 +25,12 @@ interface User {
 })
 
 export class UserComponent  {
-  @Input({ required: true }) user!: User;
-
+  @Input({ required: true }) user!:{
+    id: string;
+    avatar: string;
+    name: string;
+  };
+  
   //---Output properties
 
   @Output () select = new EventEmitter<string>();

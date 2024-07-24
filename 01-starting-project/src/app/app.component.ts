@@ -14,7 +14,7 @@ import { DUMMY_USERS } from './dummy-users';
 })
 
 export class AppComponent {
-  users = DUMMY_USERS.slice(1,2);
+  users = DUMMY_USERS;
   selectedUserId = "u1";
 
   get selectedUser(){
