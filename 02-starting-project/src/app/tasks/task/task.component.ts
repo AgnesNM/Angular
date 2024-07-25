@@ -1,7 +1,7 @@
 import { Component, Input, inject } from '@angular/core';
 import { DatePipe } from '@angular/common';
 
-import { type Task } from './task.model';
+import { type Task } from './task.module';
 import { TasksService } from '../tasks.service';
 
 @Component({
