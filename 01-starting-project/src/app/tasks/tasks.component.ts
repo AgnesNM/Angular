@@ -17,7 +17,7 @@ import { TasksService } from './tasks.service';
 export class TasksComponent {
   @Input({ required: true }) userId!:string;
   @Input({ required: true }) name!: string | undefined;
-  
+
   isAddingTask = false;
   constructor (private tasksService: TasksService) {}
 
@@ -33,11 +33,8 @@ export class TasksComponent {
     this.isAddingTask = true;
   }
 
-  onCancelAddTask(){
+  onCloseAddTask(){
     this.isAddingTask = false;
   }
 
-  onAddTask(taskData: NewTaskData){
-   this.isAddingTask=false;
-  }
 }
