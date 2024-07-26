@@ -2,21 +2,21 @@
     <div class="input-group">
         <p>
             <label for="initial-investment">Initial Investment</label>
-            <input id="initial-investment" type="number">
+            <input [(ngModel)]="enteredInitialInvestment" id="initial-investment" type="number" name="initial-investment">
         </p>
         <p>
             <label for="annual-investment">Annual Investment</label>
-            <input id="annual-investment" type="number">
+            <input [(ngModel)]="enteredAnnualInvestment" id="annual-investment" type="number" name="annual-investment">
         </p>
     </div>
     <div class="input-group">
         <p>
             <label for="expected-return">Expected Return</label>
-            <input id="expected-return"type="number">
+            <input [(ngModel)]="enteredExpectedReturn" id="expected-return"type="number" name="annual-investment">
         </p>
         <p>
             <label for="duration">Duration</label>
-            <input id="duration" type="number">
+            <input [(ngModel)]="enteredDuration" id="duration" type="number" name="annual-investment">
         </p>
     </div>
     <p>
