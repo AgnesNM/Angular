@@ -10,6 +10,7 @@ import { InvestmentResultsComponent } from './investment-results/investment-resu
   imports: [HeaderComponent, UserInputComponent, InvestmentResultsComponent],
   templateUrl: './app.component.html',
 })
+
 export class AppComponent {
   resultsData = signal < {
     year: number;
