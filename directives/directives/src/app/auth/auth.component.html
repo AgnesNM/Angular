@@ -1,0 +1,20 @@
+<h2>Authenticate to access all resources</h2>
+<form (ngSubmit)="onSubmit()"> 
+  <p>
+    <label>E-Mail</label>
+    <input type="email" name="email" [(ngModel)]="email" /> 
+    <!-- //ngModel is a built-in directive -->
+  </p>
+
+  <p>
+    <label>Password</label>
+    <input type="password" name="password" [(ngModel)]="password" />
+  </p>
+
+  <p>
+    <button>Login</button>
+  </p>
+</form>
+
+<!-- ngModel enhances input elements - two way binding and user interaction with elements -->
+<!-- ngModel is an attribute directive -->
