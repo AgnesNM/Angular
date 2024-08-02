@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+    <script src="repeat-controller.js"></script>
+  </head>
+  <body>
+    <ul ng-controller="">
+      <li ng-repeat="student in students">
+        <a href="/student/view/{{student.id}}">{{student.name}}</a>
+      </li>
+    </ul>
+    <button ng-click="insertTom()">Insert</button>
+  </body>
+</html>

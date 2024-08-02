@@ -1,0 +1,20 @@
+<div class="navbar" ng-controller="NavController">
+    <li class="menu-item" ng-click="doSomething()"> Something </li>
+</div>
+
+<div class="contentArea" ng-controller="ContentAreaController">
+    <div ng-click="doSomething()"></div>
+
+</div>
+
+<script>
+
+    function NavController($scope) {
+        $scope.doSomething = doA;
+    }
+
+    function ContentAreaController($scope){
+        $scope.doSomething = doB;
+    }
+</script>
+
