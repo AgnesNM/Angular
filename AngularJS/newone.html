@@ -1,0 +1,44 @@
+<html ng-app="myApp">
+    <body ng-controller="NewController">
+        <!-- <p>{{someText.message}}</p> -->
+         <p ng-bind = someText.message></p>
+    </body>
+    <script>
+        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js">
+    </script>
+    <script>
+        var myAppModule = angular.module("myApp", []);
+
+        myAppModule.controller("NewController",
+            function($scope){
+                var someText = {};
+                someText.message = "You have started your journey.";
+                $scope.someText = someText;
+            }
+        );
+    </script>
+
+    <form ng-submit="requestFunding()" ng-controller="StartUpController">
+        Starting: <input ng-change="computeNeeded()" ng-model="funding.startingEstimate">
+        Recommendation: {{ needed}}
+        <button>Fund my startup! </button>
+        <button ng-click="reset()">Reset</button>
+    </form>
+
+    <script>
+        function StartUpController($scope){
+            $scope.computeNeeded = function(){
+                $scope.needed = $scope.startingEstimate * 10;
+            }
+
+           $scope.requestFunding = function (){
+            window.alert("Sorry, please get more customers first.");
+           };
+
+           $scope.reset = function () {
+
+            $scope.startingEstimate = 0;
+           }
+        }
+    </script>
+</html>
