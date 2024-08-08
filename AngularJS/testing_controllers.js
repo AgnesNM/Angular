@@ -6,7 +6,7 @@ angular.module('app', [])
     if (size > 8) {
       $scope.strength = 'strong';
     } else if (size > 3){
-      $scope.strength = 'medium';      
+      $scope.strength = 'medium';
     } else {
       $scope.strength = 'weak';
     }
@@ -16,22 +16,31 @@ angular.module('app', [])
 describe('PasswordController', function(){
   beforeEach(module('app'));
 
-  var $controller, $rootScope;
+  var $controller;
 
-  beforeEach(inject(function(_$controller_, _$rootScope_){
+  beforeEach(inject(function(_$controller_){
     $controller = _$controller_;
-    $rootScope = _$rootScope_;
   }));
 
   describe('$scope.grade', function(){
-    it("sets the strength to 'strong' if the password length is >8 chars", function(){
-      var $scope = $rootScope.new();
-      var controller = $controller('PasswordController', {
-        $scope:$scope
+
+    var $scope, controller;
+
+    beforeEach(function(){
+      $scope = {};
+        controller = $controller('PasswordController', { $scope: $scope });
       });
-      $scope.password = 'longerthaneightcars';
+
+    it("sets the strength to 'strong' if the password length is >8 chars", function(){
+      $scope.password = 'longerthaneightchars';
       $scope.grade();
       expect($scope.strength).toEqual('strong');
     });
+
+    it('sets the strength to "weak" if the password length <3 chars', function(){
+      $scope.password = 'a';
+      $scope.grade();
+      expect($scope.strength).toEqual('weak');
+    })
   });
 });
