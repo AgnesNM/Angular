@@ -7,10 +7,13 @@
   </head>
 
   <body ng-app="plunker" ng-cloak>
-    <form ng-controller="StartUpController">
+    <form ng-submit="requestFunding()"
+    ng-controller="StartUpController">
       Starting:
-      <input ng-model="funding.startingEstimate" ng-change="computeNeeded()">
-      Recommendation: {{funding.needed}}
+      <input ng-model="startingEstimate"
+      ng-change="computeNeeded()">
+      <button>Fund my Startup!</button>
+      <button ng-click="reset()"> Reset</button>
     </form>
   </body>
 </html>
