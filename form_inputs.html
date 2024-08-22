@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css" />
+    <script src="lib/script.js"></script>
+  </head>
+
+  <body ng-app="plunker" ng-cloak>
+    <form ng-controller="StartUpController">
+      Starting:
+      <input ng-model="funding.startingEstimate" ng-change="computeNeeded()">
+      Recommendation: {{funding.needed}}
+    </form>
+  </body>
+</html>
