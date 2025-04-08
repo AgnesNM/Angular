@@ -255,14 +255,15 @@ app.config(function($stateProvider) {
 
 ## Practical Tips for Horizon Development
 
-  - **Understand the module structure**: First identify which modules your code needs to interact with
+- **Understand the module structure**: First identify which modules your code needs to interact with
 - **Follow existing patterns**: Look at similar components/controllers in the codebase
-  - **Component communication**:
-        _Parent to child:_ Pass data as bindings
-        _Child to parent_: Use callbacks passed as bindings
-        _Unrelated components_: Use services
-    - **Testing**: AngularJS uses Jasmine and Karma for unit testing
-    **Common Gotchas**:
+- **Component communication**:
+    a) _Parent to child:_ Pass data as bindings
+    b) _Child to parent_: Use callbacks passed as bindings
+    c)  _Unrelated components_: Use services
+- **Testing**: AngularJS uses Jasmine and Karma for unit testing
+
+**Common Gotchas**:
         - Scope inheritance can be tricky - use Controller As syntax
        -  Two-way binding performance issues with large collections
         - Circular dependencies between services
