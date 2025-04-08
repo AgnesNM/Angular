@@ -61,11 +61,11 @@ app.controller('MainController', function() {
 
 Built-in directives:
 
-    _ng-app_: Initializes an Angular application
-    _ng-model_: Binds input to a variable
-    _ng-repeat_: Iterates over collections
-    _ng-if_, _ng-show_, _ng-hide_: Conditional rendering
-    _ng-click_: Handles click events
+- _ng-app_: Initializes an Angular application
+- _ng-model_: Binds input to a variable
+- _ng-repeat_: Iterates over collections
+- _ng-if_, _ng-show_, _ng-hide_: Conditional rendering
+- _ng-click_: Handles click events
 
 **Custom directive example:**
 
