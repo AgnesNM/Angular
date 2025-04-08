@@ -1,18 +1,19 @@
-AngularJS (1.x) Crash Course
+# AngularJS (1.x) Crash Course
 
-Here's a focused crash course on AngularJS to help you contribute to Horizon effectively. This covers the essential components and concepts you'll need to understand.
-Core AngularJS Concepts
-1. Modules
+## Core AngularJS Concepts
+### 1. Modules
 
 Modules are containers for different parts of your application:
 
-javascript
+```javascript
 
 // Creating a module
 var app = angular.module('myApp', []);  // [] contains dependencies
 
 // Getting a reference to an existing module
 var existingApp = angular.module('myApp');
+
+```
 
 2. Controllers
 
