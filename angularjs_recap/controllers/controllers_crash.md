@@ -453,8 +453,9 @@ app.controller('UserController', function() {
 - More aligned with JavaScript class-based approaches
 
 #### Common $scope Pitfalls
+
 **1. The "Dot Rule"**
-Always use object properties when binding to scope to avoid inheritance issues:
+- Always use object properties when binding to scope to avoid inheritance issues
 
 ```javascript
 // Problematic:
@@ -464,8 +465,10 @@ $scope.name = 'John';
 $scope.user = {name: 'John'};
 
 ```
+
 **2. Overusing $watch**
-Excessive watchers can impact performance. Use them sparingly and consider one-time bindings (::) when possible:
+- Excessive watchers can impact performance. Use them sparingly and consider one-time bindings (::) when possible
+- 
 ```html
 <!-- One-time binding -->
 <span>{{::user.id}}</span>
@@ -473,10 +476,11 @@ Excessive watchers can impact performance. Use them sparingly and consider one-t
 <!-- Regular binding -->
 <span>{{user.name}}</span>
 ```
+
 **3. Using $scope Where Not Needed**
-In directives and components, consider using isolated scopes or "Controller As" syntax for cleaner code.
-When Building Horizon Components
-When working with existing Horizon code:
+- In directives and components, consider using isolated scopes or "Controller As" syntax for cleaner code.
+_
+**When Building Horizon Components/When working with existing Horizon code**_
 
 - Check if the component uses traditional $scope injection or "Controller As" syntax
 - Be aware of scope inheritance when modifying shared data
