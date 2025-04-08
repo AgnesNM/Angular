@@ -447,10 +447,10 @@ app.controller('UserController', function() {
 ```
 ### Benefits of "Controller As" syntax:
 
-Avoids scope inheritance issues
-Makes the controller's binding more explicit in the HTML
-Closer to how components work in newer versions of Angular
-More aligned with JavaScript class-based approaches
+- Avoids scope inheritance issues
+- Makes the controller's binding more explicit in the HTML
+- Closer to how components work in newer versions of Angular
+- More aligned with JavaScript class-based approaches
 
 #### Common $scope Pitfalls
 **1. The "Dot Rule"**
