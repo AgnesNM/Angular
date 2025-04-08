@@ -271,14 +271,14 @@ app.config(function($stateProvider) {
 
 ### Quick Reference: Common AngularJS Services
 
-    **$http**: Ajax requests
-    **$q**: Promise handling
-    **$timeout & $interval**: Timing functions
-    **$log**: Logging
-    **$filter**: Apply filters programmatically
-    **$compile**: Compile HTML with Angular
-    **$rootScope**: Application-wide scope
-   ** $location**: URL manipulation
+- **$http**: Ajax requests
+- **$q**: Promise handling
+- **$timeout & $interval**: Timing functions
+- **$log**: Logging
+- **$filter**: Apply filters programmatically
+- **$compile**: Compile HTML with Angular
+- **$rootScope**: Application-wide scope
+- **$location**: URL manipulation
 
 This crash course should give you a solid foundation to start contributing to Horizon. Remember that AngularJS has a specific way of thinking about application architecture that can take some time to adjust to, especially if you're coming from more modern frameworks.
 
