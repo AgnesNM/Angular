@@ -201,10 +201,10 @@ app.component('userCard', {
 
 Important lifecycle hooks in components:
 
-   ** $onInit**: When the controller is initialized
-    **$onChanges**: When bound inputs change
-    **$onDestroy**: When the component is destroyed
-   ** $postLink**: After the component's element and children are linked
+- _$onInit_: When the controller is initialized
+- _$onChanges_: When bound inputs change
+- _$onDestroy_: When the component is destroyed
+- _$postLink_: After the component's element and children are linked
 
 ### 10. Routing with ngRoute or UI-Router
 
