@@ -468,7 +468,7 @@ $scope.user = {name: 'John'};
 
 **2. Overusing $watch**
 - Excessive watchers can impact performance. Use them sparingly and consider one-time bindings (::) when possible
-- 
+  
 ```html
 <!-- One-time binding -->
 <span>{{::user.id}}</span>
