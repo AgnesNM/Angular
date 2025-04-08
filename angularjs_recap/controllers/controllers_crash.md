@@ -479,8 +479,8 @@ $scope.user = {name: 'John'};
 
 **3. Using $scope Where Not Needed**
 - In directives and components, consider using isolated scopes or "Controller As" syntax for cleaner code.
-_
-**When Building Horizon Components/When working with existing Horizon code**_
+
+_When Building Horizon Components/When working with existing Horizon code_
 
 - Check if the component uses traditional $scope injection or "Controller As" syntax
 - Be aware of scope inheritance when modifying shared data
