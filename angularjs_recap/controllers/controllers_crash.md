@@ -289,9 +289,8 @@ In AngularJS, a scope is a JavaScript object that serves as the binding layer be
 #### 1. Hierarchical Structure
 Scopes are organized in a hierarchical structure that mimics the DOM structure:
 
-_$rootScope_ sits at the top of the hierarchy (created when the application starts)
-Child scopes are created for controllers, certain directives, and other components
-Child scopes either inherit from their parent scope (prototypal inheritance) or create isolated scopes
+- _$rootScope_ sits at the top of the hierarchy (created when the application starts)
+- _Child scopes_ are created for controllers, certain directives, and other components. Child scopes either inherit from their parent scope (prototypal inheritance) or create isolated scopes
 
 ```javascript
 $rootScope
