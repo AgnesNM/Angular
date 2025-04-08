@@ -333,9 +333,9 @@ app.controller('ChildController', function($scope) {
 #### 3. Watchers and Digest Cycle
 $scope contains Angular's change detection mechanism:
 
-**$watch**: Monitors expressions for changes
-**$digest**: Processes all watchers of the current scope and its children
-**$apply**: Executes a function in Angular context and triggers a digest cycle
+- **$watch**: Monitors expressions for changes
+- **$digest**: Processes all watchers of the current scope and its children
+- **$apply**: Executes a function in Angular context and triggers a digest cycle
 
 ```javascript
 
