@@ -258,16 +258,16 @@ app.config(function($stateProvider) {
 - **Understand the module structure**: First identify which modules your code needs to interact with
 - **Follow existing patterns**: Look at similar components/controllers in the codebase
 - **Component communication**:
-    a) _Parent to child:_ Pass data as bindings
-    b) _Child to parent_: Use callbacks passed as bindings
-    c)  _Unrelated components_: Use services
+    (a) _Parent to child:_ Pass data as bindings
+    (b) _Child to parent_: Use callbacks passed as bindings
+    (c)  _Unrelated components_: Use services
 - **Testing**: AngularJS uses Jasmine and Karma for unit testing
 
 **Common Gotchas**:
-        - Scope inheritance can be tricky - use Controller As syntax
-       -  Two-way binding performance issues with large collections
-        - Circular dependencies between services
-        - Not properly cleaning up event listeners in $onDestroy
+- Scope inheritance can be tricky - use Controller As syntax
+- Two-way binding performance issues with large collections
+- Circular dependencies between services
+- Not properly cleaning up event listeners in $onDestroy
 
 ### Quick Reference: Common AngularJS Services
 
