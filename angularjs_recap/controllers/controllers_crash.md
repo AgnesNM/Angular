@@ -410,7 +410,8 @@ app.controller('NotificationController', function($scope) {
 ```
 ### "Controller As" Syntax vs $scope Injection
 As AngularJS evolved, "Controller As" syntax was introduced as a recommended alternative to $scope:
-Traditional $scope approach:
+_
+Traditional $scope approach:_
 
 ```javascript
 app.controller('UserController', function($scope) {
